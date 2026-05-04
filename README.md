@@ -8,12 +8,12 @@ The Utilized OVS Datasets (DLRSD, iSAID, Potsdam, Vaihingen)
 detectron2 is required to install
 
 
-##How to train our model
+## How to train our model
 python3 train_net.py --config-file configs/vitb_384.yaml
 
-##How to test our model(example)
+## How to test our model(example)
 python3 train_net.py --config-file configs/vitb_384.yaml --eval-only  MODEL.WEIGHTS output/model_0044999.pth OUTPUT_DIR /output/eval
 
-##How to visualize segmentation results
+## How to visualize segmentation results
 python3 -m cat_seg.visualize_json_results   --input /media/frank/c33f46c2-95b6-4799-a17a-59120b2520a2/VisualOut/eval/inference/sem_seg_predictions.json   --output /media/frank/c33f46c2-95b6-4799-a17a-59120b2520a2/VisualOut/eval/vis   --dataset iSAID_val_sem_seg
 
