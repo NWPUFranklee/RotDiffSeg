@@ -17,6 +17,7 @@ python3 train_net.py --config-file configs/vitb_384.yaml --eval-only  MODEL.WEIG
 ## How to visualize segmentation results
 python3 -m cat_seg.visualize_json_results   --input /media/frank/c33f46c2-95b6-4799-a17a-59120b2520a2/VisualOut/eval/inference/sem_seg_predictions.json   --output /media/frank/c33f46c2-95b6-4799-a17a-59120b2520a2/VisualOut/eval/vis   --dataset iSAID_val_sem_seg
 
+ ```bibtex
 @ARTICLE{10962188,
  author={Cao, Qinglong and Chen, Yuntian and Ma, Chao and Yang, Xiaokang},
  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
